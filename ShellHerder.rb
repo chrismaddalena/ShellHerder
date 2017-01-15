@@ -54,9 +54,9 @@ module Msf
 			@user_name = nil
 			@channel = "#<CHANNEL_NAME>" # An existing channel or one setup for the alerts
 			@bot_name = "Shell Herder" # Whatever you want the bot's name to be
-      $source = nil
-      $opened = Array.new
-      $closed = Array.new
+			$source = nil
+			$opened = Array.new
+			$closed = Array.new
 
 
 		  # Actions for when a session is created
@@ -140,7 +140,7 @@ module Msf
 					'notify_save'					=> "Save Settings to YAML File #{Notify_yaml}.",
 					'notify_set_webhook'	=> "Sets Slack Webhook URL.",
 					'notify_set_user'			=> "Set Slack username for messages.",
-          'notify_set_source'   => "Set source for identifying the souce of the message.",
+					'notify_set_source'		=> "Set source for identifying the souce of the message.",
 					'notify_show_options'	=> "Shows currently set parameters.",
 
 				}
